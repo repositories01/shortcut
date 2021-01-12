@@ -1,124 +1,46 @@
-[![Netlify Status](https://api.netlify.com/api/v1/badges/8ec719ad-c2f8-4529-b97d-e7561a9eaf33/deploy-status)](https://app.netlify.com/sites/delog-w3layouts/deploys) &nbsp;<a href="https://twitter.com/intent/follow?screen_name=w3layouts">
-  <img src="https://img.shields.io/twitter/follow/w3layouts.svg?label=Follow%20@w3layouts" alt="Follow @w3layouts" />
-</a>
+# Getting Started with Create React App
 
-# Delog - Blog for Developer and Designer
-This simple website built with GatsbyJS and Netlify CMS. Deploys on netlify with single click. This Starter is sponsered by [W3Layouts](https://w3layouts.com).
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-[![Delog - Gatsby Starter Demo](https://w3layouts.com/wp-content/uploads/2020/03/delog.jpg)](https://delog-w3layouts.netlify.com/)
+## Available Scripts
 
-[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/W3Layouts/gatsby-starter-delog)
+In the project directory, you can run:
 
-Install this starter locally: (assuming you already have [NodeJS and GatsbyJS installed](https://www.gatsbyjs.org/tutorial/part-zero/))
-```bash
-gatsby new gatsby-starter-delog https://github.com/W3Layouts/gatsby-starter-delog
-```
+### `yarn start`
 
-Instructions also available at W3Layouts [Delog Launch Article](https://w3layouts.com/articles/delog-gatsby-starter-netlify-cms/).
+Runs the app in the development mode.\
+Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-## Features
-- Built with GatsbyJS and Netlify CMS
-- Option to Add, Edit, Update and Delete posts via Netlify CMS
-- SEO friendly - Option to Add meta description
-- In-built contact form powered by [W3Layouts](https://w3layouts.com) 
-- Comes with dark mode
+The page will reload if you make edits.\
+You will also see any lint errors in the console.
 
----
+### `yarn test`
 
-## Documentation
+Launches the test runner in the interactive watch mode.\
+See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-* Once you hit "[Deploy to Netlify](https://app.netlify.com/start/deploy?repository=https://github.com/W3Layouts/gatsby-starter-delog)"
-* Connect Github
-* Enter Repository Name
-* And your site starts build process. After the build process your website is live
+### `yarn build`
 
-### Changing repositary URL for Netlify CMS access
-You need to change repo URL to your own `repo` at `/static/admin/config.yml`, for example `username/repo-name`
+Builds the app for production to the `build` folder.\
+It correctly bundles React in production mode and optimizes the build for the best performance.
 
-### Creating Github OAuth Client ID
-* Goto Github [Developer Settings](https://github.com/settings/developers)
-* **New OAuth** 
-* Enter Application name
-* Homepage URL as Netlify URL
-* And **Authorization callback URL** to `https://api.netlify.com/auth/done`)
-* Once Client ID and Secret token is generated configure same in [Netlify Access Control](#accessing-netlify-cms-admin) as described.
+The build is minified and the filenames include the hashes.\
+Your app is ready to be deployed!
 
-### Accessing Netlify CMS Admin
-* Goto your Netlify site admin
-* Goto **Access Control** > **OAuth** then **Install Provider** you need to select provider as `Github` as add `Client ID` and `Secret` 
-* Your Netlify CMS is ready. Goto you netlify site URL and append `/admin/`. for example `example.netlify.com/admin/`, You will see login with Github button.
+See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### Managing Blog Posts in Netlify CMS
-* Once logged in you will find all the blog post listed here.
-* You can create, edit, update and delete like any CMS
+### `yarn eject`
 
-### Editing Meta Data
-Inside you Netlify CMS admin, `Settings > Config` or you can go to `site-meta-data.json`. Here you can edit following details
-* Title
-* Description
-* Site URL
-* Homepage Title
-* Homepage Description
-* To get the Contact form working. you need too add a form at [W3Layouts forms](https://my.w3layouts.com/Forms/). Follow the steps [How to enable W3Layouts Contact form](https://w3layouts.com/articles/introducing-contact-forms-for-static-websites/) instructions to create a form then your contact form is all set.
+**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
 
-### Add Google Analytics
-Change `trackingId` in `gatsby-config.js` at `gatsby-plugin-google-analytics` plugin
+If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
----
+Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
 
-I hope you will build a great website with Delog. If you like it please spread the word, Feel free to contribute and raise a pull request :)
+You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
 
-For issues,feedback on enhancement or sharing your new awesome website built with delog. [Create New Issue](https://github.com/W3Layouts/gatsby-starter-delog/issues/new) Here
+## Learn More
 
----
+You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-## Roadmap
-We are maintaining future task in [Github Project](https://github.com/W3Layouts/gatsby-starter-delog/projects/1), even though most changes are instantaious. We try keep them posted here.
-
----
-
-## Credits
-- Awesome image used in demo is from [Unsplash](https://unsplash.com)
-- CSS and SVG Icons by [CSS.gg](https://css.gg)
-
----
-
-## Changelog
-All notable changes to this project are listed here.
-
-### [1.6.0] - 2020-05-03
-#### Added
-- Custom 404 page.
-- Site name will be appended in blog posts and contact page.
-- Reordering fields in Netlify CMS for better flow of post creation.
-- Validation for path in Netlify CMS
-
-### [1.5.0] - 2020-05-03
-#### Added
-- Settings page in Netlify CMS to customize site meta data.
-- Site meta data is pulled from `site-meta-data.json`. maintained via Netlify CMS
-
-### [1.4.0] - 2020-05-01
-#### Added
-- `gatsby-plugin-sitemap` Creates a sitemap for your Gatsby site in production.
-
-#### Changed
-- Changelog improvements
-- Comments on `gatsby-config.js`
-- Comments on `static/admin/config.yml`
-
-### [1.3.0] - 2020-04-30
-#### Added
-- `gatsby-plugin-offline` drop-in support for making a GatsbyJS site work offline and more resistant to bad network connections.
-- `gatsby-plugin-manifest` configures GatsbyJS to create a manifest.webmanifest file on every site build
-
-### [1.2.0] - 2020-04-28
-#### Added 
-- GatsbyJS Increment builds with Netlify deployment
-
-### [1.1.0] - 2020-04-21
-#### Added 
-- Dark mode compatibitly and toggle for user preference
-
-### [1.0.0] - 2020-03-14
-- Launch of GatsbyJS and Netlify CMS based starter `gatsby-starter-delog`
+To learn React, check out the [React documentation](https://reactjs.org/).

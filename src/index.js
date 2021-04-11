@@ -1,3 +1,4 @@
+import { render } from 'lit-html'
 import App from './App'
 
 

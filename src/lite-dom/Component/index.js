@@ -1,4 +1,4 @@
-import { renderComponent } from './vdom'
+import { renderComponent } from './lite-dom'
 
 export default class Component {
   constructor(props) {

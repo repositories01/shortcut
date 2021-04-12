@@ -1,3 +1,8 @@
+
+export default function (nodeName, attributes, ...children) {
+  return { nodeName, attributes, children }
+}
+
 export const renderNode = vnode => {
   let el
 

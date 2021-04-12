@@ -3,7 +3,7 @@
   "plugins": [
     [
       "@babel/plugin-transform-react-jsx",
-      { "pragma": "sintaxe", "pragmaFrag": "'fragment'" }
+      { "pragma": "litedom", "pragmaFrag": "'fragment'" }
     ]
   ]
 }

@@ -1,15 +1,11 @@
+import sintaxe from '../lib/sintaxe'
 
-import h from '../lib/sintaxe'
-import People from './components/People'
-import Component from '../lib/component'
+const App = () => {
+  return (
+    <div >
+      <h1>Teste</h1>
+    </div>
+  )
+}
 
-class App extends Component {
-    render() {
-      return h('div', { class: 'app' },
-        h('h1', null, 'Simple vDOM'),
-        )
-      }
-    };
-    
-    export default App;
-    // h(People)
+export default App;

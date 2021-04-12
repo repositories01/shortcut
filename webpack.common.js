@@ -19,7 +19,7 @@ module.exports = {
       template: './public/index.html'
     }),
     new CopyWebpackPlugin([
-      { from: 'src/assets', to: 'assets' }
+      // { from: 'src/assets', to: 'assets' }
     ])
   ],
   optimization: {

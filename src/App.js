@@ -7,9 +7,9 @@ class App extends Component {
     render() {
       return h('div', { class: 'app' },
         h('h1', null, 'Simple vDOM'),
-        h(People)
-      )
-    }
-  };
-
-export default App;
+        )
+      }
+    };
+    
+    export default App;
+    // h(People)

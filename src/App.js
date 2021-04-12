@@ -1,9 +1,15 @@
-import { html } from 'lit-html'
 
-const App = () => html`
+import h from '../lib/sintaxe'
+import People from './components/People'
+import Component from '../lib/component'
 
-<h1> Teste</h1>
-
-`
+class App extends Component {
+    render() {
+      return h('div', { class: 'app' },
+        h('h1', null, 'Simple vDOM'),
+        h(People)
+      )
+    }
+  };
 
 export default App;

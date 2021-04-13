@@ -1,11 +1,9 @@
-import litedom, { render } from './lite-dom';
-
-
+import vdomjs, { render } from './vdomjs';
 
 
 const App = () => {
     return (
-        <h1>Lite dom</h1>
+        <h1>Vdom.js</h1>
     )
 }
 

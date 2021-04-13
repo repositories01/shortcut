@@ -3,7 +3,7 @@
   "plugins": [
     [
       "@babel/plugin-transform-react-jsx",
-      { "pragma": "litedom", "pragmaFrag": "'fragment'" }
+      { "pragma": "vdomjs", "pragmaFrag": "'fragment'" }
     ]
   ]
 }

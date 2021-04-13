@@ -1,8 +1,8 @@
 {
-  "name": "clean",
+  "name": "vdomjs",
   "version": "1.0.0",
   "main": "index.js",
-  "repository": "git@github.com:thiagomedina/clean.git",
+  "repository": "git@github.com:thiagomedina/vdomjs.git",
   "author": "thiagomedina <thiagomedina001@gmail.com>",
   "license": "MIT",
   "private": true,
@@ -25,10 +25,6 @@
     "@babel/plugin-transform-react-jsx": "^7.10.4",
     "debounce-ctx": "^0.0.2",
     "lit-html": "^1.1.2",
-    "ramda": "^0.26.1"
-  },
-  "devDependencies": {
-
     "autoprefixer": "^9.4.7",
     "babel-eslint": "^10.0.1",
     "babel-loader": "^8.0.5",
@@ -47,5 +43,8 @@
     "webpack-dev-server": "^3.1.14",
     "webpack-manifest-plugin": "^2.0.4",
     "webpack-merge": "^4.2.1"
+  },
+  "devDependencies": {
+   
   }
 }
